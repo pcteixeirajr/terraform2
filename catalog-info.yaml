@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: "TesteTerraform"
+  description: "Teste terraform RBF"
+  annotations:
+    dev.azure.com/project: vinci-retirement-services
+    dev.azure.com/project-slug: vinci-retirement-services/TesteTerraform
+    dev.azure.com/project-repo: vinci-retirement-services/TesteTerraform
+    dev.azure.com/build-definition: TesteTerraform
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: aws:iasc
+  lifecycle: experimental
+  owner: "vinci-retirement-services"
+  system: "vinci-prev.pj"
+  #subcomponentOf: spotify-ios-app
+  #dependsOn:
+  #- resource:default/artists-db
+  #providesApis:
+  #- "TesteTerraform"
+  #consumesApis:
+  #- account-api
+
